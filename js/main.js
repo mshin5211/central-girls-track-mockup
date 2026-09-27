@@ -1,16 +1,17 @@
-// main.js
-
 document.addEventListener('DOMContentLoaded', () => {
     // Add active state to navigation items
-    const currentLocation = location.href;
-    const menuItem = document.querySelectorAll('.nav-links a');
-    const menuLength = menuItem.length;
-    
-    for (let i = 0; i < menuLength; i++) {
-        if (menuItem[i].href === currentLocation) {
-            menuItem[i].className = "active";
+    const currentPath = location.pathname.split('/').pop() || 'index.html';
+    const menuItems = document.querySelectorAll('.nav-links a');
+
+    menuItems.forEach(item => {
+        // Do not touch the Donate button's classes
+        if (item.classList.contains('nav-donate')) return;
+
+        const itemHref = item.getAttribute('href');
+        if (itemHref === currentPath) {
+            item.classList.add('active');
         } else {
-            menuItem[i].className = "";
+            item.classList.remove('active');
         }
-    }
+    });
 });
