@@ -13,7 +13,7 @@ NAV_HTML = """<nav class="navbar">
                 <a href="join.html">Join</a>
                 <a href="updates.html">News</a>
                 <a href="support.html">Support Us</a>
-                <a href="support.html#donate" class="nav-donate text-light">Donate Now</a>
+                <a href="donate.html" class="nav-donate text-light">Donate Now</a>
             </div>
         </div>
     </nav>"""
@@ -70,15 +70,21 @@ def fix_file(path):
     # Replace Navbar (Handles any variant of <nav ...> ... </nav>)
     content = re.sub(r'<nav[^>]*>.*?</nav>', NAV_HTML, content, flags=re.DOTALL)
     
-    # Replace Navbar place holder if exists (for support.html)
+    # Replace Navbar place holder if exists
     content = re.sub(r'<!-- NAVBAR_PLACEHOLDER -->\s*<nav[^>]*>.*?</nav>', NAV_HTML, content, flags=re.DOTALL)
 
     # Replace Footer entirely till the end of the body and html tags
     content = re.sub(r'<footer[^>]*>.*', FOOTER_HTML, content, flags=re.DOTALL)
+    
+    # Replace Footer placeholder
+    content = re.sub(r'<!-- FOOTER_PLACEHOLDER -->\s*<footer[^>]*>.*', FOOTER_HTML, content, flags=re.DOTALL)
 
-    # Replace sponsors.html to support.html across all internal links just in case
+    # Clean up any legacy links just in case
     content = content.replace('"sponsors.html"', '"support.html"')
     content = content.replace("'sponsors.html'", "'support.html'")
+    
+    # Clean up old anchor tag donate button link to use the robust donate page
+    content = content.replace('"support.html#donate"', '"donate.html"')
 
     with open(path, 'w', encoding='utf-8') as f:
         f.write(content)
