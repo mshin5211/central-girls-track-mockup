@@ -46,11 +46,10 @@ FOOTER_HTML = """<!-- Global Footer -->
                     </div>
                 </div>
                 <div>
-                    <h3>FOLLOW US</h3>
-                    <div class="footer-links" style="display:flex; flex-direction:row; gap:1rem; font-size:1.5rem; margin-top:0.5rem;">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <h3>FOLLOW OUR TEAM</h3>
+                    <div class="footer-links" style="display:flex; flex-direction:row; gap:1.25rem; font-size:1.5rem; margin-top:0.5rem;">
+                        <a href="https://www.facebook.com/runningmaroons/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/runningmaroons/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
