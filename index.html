@@ -1,120 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central Girls Track & Field Boosters | Champaign Central High School</title>
-    <meta name="description" content="Support the Central Girls Track Team! The Booster Club is a 501(c)(3) non-profit organization helping to raise funds for uniforms, team meals, and equipment.">
+    <meta name="description"
+        content="Support the Central Girls Track Team! The Booster Club is a 501(c)(3) non-profit organization helping to raise funds.">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="nav-brand">
-                <!-- Using a text logo with icon since actual image isn't available right now, or an inline SVG -->
-                <span><i class="fa-solid fa-person-running"></i> CENTRAL GIRLS TRACK</span>
+                <img src="assets/logo.png" alt="Central Girls Track" onerror="this.style.display='none'">
+                <span>CHAMPAIGN <span>CENTRAL</span> <br><span
+                        style="font-size:1rem;color:var(--text-light);font-weight:400;letter-spacing:2px">GIRLS TRACK &
+                        FIELD</span></span>
             </a>
             <div class="nav-links">
                 <a href="index.html" class="active">Home</a>
-                <a href="about.html">About & 501(c)(3)</a>
-                <a href="join.html">Join the Team</a>
-                <a href="updates.html">News & Updates</a>
-                <a href="sponsors.html">Sponsors & Donors</a>
-                <a href="sponsors.html#donate" class="nav-donate">Donate Now</a>
+                <a href="about.html">About</a>
+                <a href="join.html">Join</a>
+                <a href="updates.html">News</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="sponsors.html#donate" class="nav-donate text-light">Donate Now</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Empowering Our Champions</h1>
-            <p>Supporting the Champaign Central High School Girls Track & Field Team. No cut. No cost. All heart.</p>
-            <div class="hero-actions">
-                <a href="sponsors.html#donate" class="btn btn-primary">Support the Team</a>
-                <a href="join.html" class="btn btn-outline" style="color: white; border-color: white;">Join Our Team</a>
+        <div class="hero-image-wrapper">
+            <img src="assets/hero.jpg" class="hero-bg" alt="Track Runner sprinting">
+        </div>
+        <div class="container relative z-10">
+            <div class="hero-content">
+                <div class="accent-bar"></div>
+                <h1 class="title-massive">EMPOWERING <br>OUR CHAMPIONS</h1>
+                <p>Supporting the Champaign Central High School Girls Track & Field Team. No cut. No cost. All heart.
+                </p>
+                <div style="display:flex; gap:1.5rem; margin-top:2rem;">
+                    <a href="sponsors.html#donate" class="btn"><span>Support the Team</span></a>
+                    <a href="join.html" class="btn btn-dark"><span>Join the Roster</span></a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">1976</span>
+                        <span class="stat-label">Established</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">2A</span>
+                        <span class="stat-label">IHSA Class</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">501(c)3</span>
+                        <span class="stat-label">Non-Profit</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Impact Section -->
-    <section class="section" style="background-color: var(--background-alt);">
+    <section class="section bg-darker">
         <div class="container">
-            <div class="section-title">
-                <h2>Our Mission & Impact</h2>
-                <p>The Central Girls Track Boosters is a 501(c)(3) organization dedicated to bridging the funding gap so every athlete can compete, regardless of their background.</p>
-            </div>
-            
-            <div class="activities-grid">
-                <!-- Activity 1 -->
-                <div class="activity-card">
-                    <div class="activity-img" style="background-image: url('assets/team_group.jpg');"></div>
-                    <div class="activity-content">
-                        <h3>Team Building & Recognition</h3>
-                        <p>We fund essential recognition items, end-of-year banquets, state competition shirts, and team meals to foster camaraderie and celebrate their hard work.</p>
+            <div class="split-section">
+                <div>
+                    <div class="section-head">
+                        <div class="accent-bar" style="background:var(--primary-bright)"></div>
+                        <h2 class="title-xl text-light">MORE THAN JUST <br>A SPORT</h2>
+                        <p class="text-gray" style="max-width: 500px; font-size: 1.1rem; margin-top: 1.5rem;">
+                            The Central Girls Track Boosters is a 501(c)(3) organization dedicated to bridging the
+                            funding gap so every athlete can compete, regardless of their background. We supply
+                            uniforms, team meals, and equipment.
+                        </p>
                     </div>
-                </div>
-                
-                <!-- Activity 2 -->
-                <div class="activity-card">
-                    <div class="activity-img" style="background-image: url('assets/equipment.jpg'); background-color: #eee;"></div>
-                    <div class="activity-content">
-                        <h3>Uniforms & Equipment</h3>
-                        <p>With an ongoing need for new warm-up apparel, hurdle carts, and pit equipment, we ensure our athletes have the gear needed to compete safely and proudly.</p>
-                    </div>
-                </div>
 
-                <!-- Activity 3 -->
-                <div class="activity-card">
-                    <div class="activity-img" style="background-image: url('assets/community.jpg'); background-color: #ddd;"></div>
-                    <div class="activity-content">
-                        <h3>Community Driven</h3>
-                        <p>Since our field is not on campus, home meets and fundraisers rely entirely on family and community volunteers. Your support keeps us running.</p>
-                    </div>
+                    <a href="about.html" class="btn.btn-dark text-accent"
+                        style="font-family: 'Teko', sans-serif; font-size: 1.5rem; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 5px;">Discover
+                        Our Mission &rarr;</a>
                 </div>
-            </div>
-            
-            <div class="text-center" style="margin-top: 3rem;">
-                <a href="about.html" class="btn btn-accent">Learn More About the Boosters</a>
+                <div class="split-image">
+                    <img src="assets/team_group.jpg" alt="Track Team Group Photo">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Services Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head text-center mx-auto"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <div class="accent-bar" style="transform: skewX(-10deg);"></div>
+                <h2 class="title-xl text-dark" style="margin-bottom:0;">FUNDING THE FUTURE</h2>
+                <p class="text-gray" style="max-width:600px; margin-top:1rem;">Your support goes directly towards
+                    enhancing the experience of our student athletes.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="feature-card">
+                    <i class="fa-solid fa-medal icon"></i>
+                    <h3 class="title-lg text-light">Recognition</h3>
+                    <p class="text-gray mt-2">End-of-year banquets, state competition apparel, and team-building meals
+                        to celebrate hard work.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-stopwatch icon"></i>
+                    <h3 class="title-lg text-light">Equipment</h3>
+                    <p class="text-gray mt-2">Hurdle carts, pit equipment, and precision timing gear needed for safe
+                        training and top competition.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-shirt icon"></i>
+                    <h3 class="title-lg text-light">Uniforms</h3>
+                    <p class="text-gray mt-2">High-quality warm-up apparel and competition uniforms so our girls look as
+                        fast as they run.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Central Girls Track Boosters</h4>
+                <div>
+                    <h3>CENTRAL GIRLS TRACK BOOSTERS</h3>
                     <p>610 W. University<br>Champaign, IL 61820</p>
-                    <p>501(c)(3) Non-Profit Organization</p>
+                    <p style="margin-top:1rem; color:var(--accent);">Official 501(c)(3) Organization</p>
+                    <p style="margin-top:0.5rem;"><a href="mailto:Centralgirlstrackboosters@gmail.com"
+                            class="text-light" style="text-decoration:none;">Centralgirlstrackboosters@gmail.com</a></p>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="join.html">Join the Team</a></li>
-                        <li><a href="updates.html">Updates & Press</a></li>
-                        <li><a href="sponsors.html">Sponsors</a></li>
-                    </ul>
+                <div>
+                    <h3>SITE MAP</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About & Status</a>
+                        <a href="join.html">Team & Roster</a>
+                        <a href="updates.html">News Updates</a>
+                        <a href="sponsors.html">Donors</a>
+                    </div>
                 </div>
-                <div class="footer-col">
-                    <h4>External Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://www.athletic.net/team/19700/track-and-field-outdoor/2026" target="_blank">Team Statistics <i class="fa-solid fa-external-link-alt" style="font-size: 0.8em"></i></a></li>
-                        <li><a href="https://www.ihsa.org/schools/trends/school/0324" target="_blank">IHSA Profile <i class="fa-solid fa-external-link-alt" style="font-size: 0.8em"></i></a></li>
-                    </ul>
+                <div>
+                    <h3>ATHLETICS</h3>
+                    <div class="footer-links">
+                        <a href="https://www.athletic.net/team/19700/track-and-field-outdoor/2026"
+                            target="_blank">Performance Stats</a>
+                        <a href="https://www.ihsa.org/schools/trends/school/0324" target="_blank">IHSA Profile</a>
+                    </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <p>Follow us on social media for live updates, meet results, and more!</p>
-                    <div class="social-icons">
+                <div>
+                    <h3>FOLLOW US</h3>
+                    <div class="footer-links" style="display:flex; gap:1.5rem; font-size:1.5rem; margin-top:1rem;">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -122,12 +162,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Champaign Central High School Girls Track Boosters. All rights reserved.</p>
+                <p>&copy; 2026 Champaign Central High School Girls Track. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
