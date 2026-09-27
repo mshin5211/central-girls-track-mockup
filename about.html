@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Central Girls Track Boosters</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-header {
+            padding: 8rem 0 4rem;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin: 4rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border-top: 4px solid var(--accent);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <span><i class="fa-solid fa-person-running"></i> CENTRAL GIRLS TRACK</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About & 501(c)(3)</a>
+                <a href="join.html">Join the Team</a>
+                <a href="updates.html">News & Updates</a>
+                <a href="sponsors.html">Sponsors & Donors</a>
+                <a href="sponsors.html#donate" class="nav-donate">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-header">
+        <div class="container">
+            <h1>About Our Booster Club</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Dedicated to empowering the Central High
+                School Girls Track Team since 1976.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2 class="text-primary mb-2">Our Mission</h2>
+                    <p class="mb-2">The Booster Club for Champaign Central High School Girls Track is officially
+                        recognized as a 501(c)(3) non-profit organization as of July 2026. Our primary focus is to help
+                        raise funds for the Central girls track team to ensure every athlete has what they need to
+                        succeed.</p>
+                    <p class="mb-4">While the club collects a modest $35 membership fee per family, we must make up a
+                        significant difference from fundraising efforts. With over $14,000 worth of pending spending
+                        needs for uniforms, team recognition, banquets, and equipment, our work is more vital than ever.
+                    </p>
+                    <h3 class="text-accent mb-1">Our Coaches</h3>
+                    <ul style="border-left: 3px solid var(--primary); padding-left: 1rem;">
+                        <li class="mb-1"><strong>Coach Hood</strong> - Head Coach</li>
+                        <li class="mb-1"><strong>Coach Ball</strong> - Jumping/Sprinting</li>
+                        <li class="mb-1"><strong>Coach Lewis</strong> - Sprinting</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/team_group.jpg" alt="Track Team"
+                        style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">1976</div>
+                    <p>Team Established</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2A</div>
+                    <p>IHSA Class</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">501(c)(3)</div>
+                    <p>Non-Profit Status</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Simplified footer for inner page -->
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Central Girls Track Boosters</h4>
+                    <p>610 W. University<br>Champaign, IL 61820</p>
+                    <p>501(c)(3) Non-Profit Organization</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="join.html">Join the Team</a></li>
+                        <li><a href="updates.html">Updates & Press</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Champaign Central High School Girls Track Boosters.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

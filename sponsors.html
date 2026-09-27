@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors & Donors | Central Girls Track</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .sponsor-hero {
+            padding: 8rem 0 4rem;
+            background: var(--background-alt);
+            text-align: center;
+        }
+
+        .goal-meter {
+            width: 100%;
+            max-width: 600px;
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: var(--radius-full);
+            margin: 2rem auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .goal-fill {
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            width: 45%;
+            height: 100%;
+            border-radius: var(--radius-full);
+            transition: width 1s ease-in-out;
+        }
+
+        .donor-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .donor-card {
+            padding: 1.5rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .donor-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-3px);
+        }
+
+        .wishlist {
+            max-width: 600px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .wishlist-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .wishlist-item:last-child {
+            border-bottom: none;
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .donate-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand"><span><i class="fa-solid fa-person-running"></i> CENTRAL GIRLS
+                    TRACK</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About & 501(c)(3)</a>
+                <a href="join.html">Join the Team</a>
+                <a href="updates.html">News & Updates</a>
+                <a href="sponsors.html" class="active">Sponsors & Donors</a>
+                <a href="sponsors.html#donate" class="nav-donate">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sponsor-hero">
+        <div class="container" style="padding-top: 3rem;">
+            <h1 class="text-primary mb-2">Our Generous Supporters</h1>
+            <p>Our sponsors and donors are the backbone of the Central Girls Track Boosters.</p>
+            <div class="goal-meter">
+                <div class="goal-fill"></div>
+            </div>
+            <p class="text-accent" style="font-weight: 600;">Fundraising Goal: ~$6,000 raised / $14,125 needed</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-6">
+                <h2>Our Wish List</h2>
+                <p>Curious how your donations are used? Here is our current Booster Club wish list for the upcoming
+                    season:</p>
+            </div>
+
+            <div class="wishlist">
+                <div class="wishlist-item"><span>New Warm-Up Apparel</span> <span>~$6,000</span></div>
+                <div class="wishlist-item"><span>Hurdle Carts</span> <span>~$1,500</span></div>
+                <div class="wishlist-item"><span>Portable Bleachers</span> <span>$2,895</span></div>
+                <div class="wishlist-item"><span>Covered Benches</span> <span>$2,230</span></div>
+                <div class="wishlist-item"><span>Pit Equipment</span> <span>~$1,500</span></div>
+                <div class="wishlist-item"><span>Total Needed</span> <span>$14,125</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Honor Roll -->
+    <section class="section" style="background-color: var(--background-alt);">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Sponsor Honor Roll</h2>
+                <p>Thank you to our local community affiliates and families who have contributed via memberships, car
+                    washes, and online fundraisers.</p>
+            </div>
+            <div class="donor-list">
+                <div class="donor-card">
+                    <h4>Champaign Local Business</h4>
+                    <p class="text-accent">Gold Sponsor</p>
+                </div>
+                <div class="donor-card">
+                    <h4>The Smith Family</h4>
+                    <p class="text-accent">Silver Sponsor</p>
+                </div>
+                <div class="donor-card">
+                    <h4>Community Partner inc.</h4>
+                    <p class="text-accent">Bronze Sponsor</p>
+                </div>
+                <div class="donor-card">
+                    <h4>Jane Doe & Family</h4>
+                    <p class="text-accent">Boosters Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate" class="donate-section">
+        <div class="container">
+            <h2 class="mb-2">Support the Future of Champaign Track</h2>
+            <p class="mb-4" style="max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.9;">Your
+                501(c)(3) tax-deductible donation directly impacts our student athletes, providing uniforms, equipment,
+                and a safe place to compete.</p>
+            <a href="#" class="btn btn-accent" style="font-size: 1.2rem; padding: 1rem 2rem;">Donate Securely Online</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-bottom" style="border-top: none; padding-top: 1rem;">
+                <p>&copy; 2026 Champaign Central High School Girls Track Boosters.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

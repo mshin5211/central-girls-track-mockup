@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates | Central Girls Track</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .updates-hero {
+            padding: 8rem 0 4rem;
+            background: var(--surface);
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            display: flex;
+            align-items: stretch;
+            transition: var(--transition);
+            border-left: 4px solid var(--primary);
+        }
+
+        .post-card:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .post-date {
+            background: var(--background-alt);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+            border-right: 1px solid var(--border);
+            color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .post-date span:first-child {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .post-date span:last-child {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .post-content {
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .post-content h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .post-meta {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .post-card {
+                flex-direction: column;
+                border-left: none;
+                border-top: 4px solid var(--primary);
+            }
+
+            .post-date {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+                flex-direction: row;
+                gap: 0.5rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand"><span><i class="fa-solid fa-person-running"></i> CENTRAL GIRLS
+                    TRACK</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About & 501(c)(3)</a>
+                <a href="join.html">Join the Team</a>
+                <a href="updates.html" class="active">News & Updates</a>
+                <a href="sponsors.html">Sponsors & Donors</a>
+                <a href="sponsors.html#donate" class="nav-donate">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="updates-hero">
+        <div class="container" style="padding-top: 3rem;">
+            <h1 class="text-primary mb-2">Team & Booster Updates</h1>
+            <p style="font-size: 1.1rem; color: #666;">Stay informed about our latest track meets, announcements, and
+                fundraising events.</p>
+        </div>
+    </div>
+
+    <section class="section" style="background-color: var(--background-alt);">
+        <div class="container" style="max-width: 900px;">
+
+            <div class="post-card">
+                <div class="post-date"><span>26</span><span>Sep</span></div>
+                <div class="post-content">
+                    <div class="post-meta"><i class="fa-solid fa-tag"></i> Press Release &nbsp;&nbsp; <i
+                            class="fa-solid fa-user"></i> Commitee</div>
+                    <h3><a href="#" style="color: var(--text-dark);">Exceptional Performance at Saturday's
+                            Invitational</a></h3>
+                    <p>The Girls Track Team showed immense spirit at the latest meet! Coach Hood reported top times
+                        across the board in sprinting, with several personal bests broken. Thank you to the families who
+                        volunteered for concessions!</p>
+                    <a href="#" class="text-primary"
+                        style="display: inline-block; margin-top: 1rem; font-weight: 600;">Read Full Release &rarr;</a>
+                </div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-date"><span>15</span><span>Sep</span></div>
+                <div class="post-content">
+                    <div class="post-meta"><i class="fa-solid fa-tag"></i> Fundraising &nbsp;&nbsp; <i
+                            class="fa-solid fa-user"></i> Booster Club</div>
+                    <h3><a href="#" style="color: var(--text-dark);">Fall Car Wash Fundraiser a Huge Success</a></h3>
+                    <p>Thanks to the community's amazing support, our annual car wash raised over $1,350! These funds
+                        will go directly to purchasing much-needed pit equipment. Our online fundraiser is also
+                        currently at $3,200.</p>
+                </div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-date"><span>01</span><span>Aug</span></div>
+                <div class="post-content">
+                    <div class="post-meta"><i class="fa-solid fa-tag"></i> Announcement &nbsp;&nbsp; <i
+                            class="fa-solid fa-user"></i> School Board</div>
+                    <h3><a href="#" style="color: var(--text-dark);">Boosters Receive 501(c)(3) Designation</a></h3>
+                    <p>We are proud to announce that the Central Girls Track Boosters is now formally recognized as a
+                        501(c)(3) tax-exempt organization. Your donations are now fully tax-deductible!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-bottom" style="border-top: none; padding-top: 1rem;">
+                <p>&copy; 2026 Champaign Central High School Girls Track Boosters.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
