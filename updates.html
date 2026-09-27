@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News | Central Girls Track</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="bg-light text-dark">
+<body style="background: var(--bg-color);">
 
-    <nav class="navbar" style="background:var(--bg-dark)">
+    <nav class="navbar">
         <div class="container">
             <a href="index.html" class="nav-brand">
                 <img src="assets/logo.png" alt="Central Girls Track" onerror="this.style.display='none'">
@@ -26,51 +27,74 @@
         </div>
     </nav>
 
-    <header class="section" style="padding-top: 12rem; padding-bottom: 4rem;">
-        <div class="container">
-            <h1 class="title-xl text-dark" style="border-left: 8px solid var(--accent); padding-left: 1rem;">NEWS &
-                ROSTER UPDATES</h1>
+    <header class="section" style="padding-top: 150px; background: var(--bg-color);">
+        <div class="container text-center">
+            <h1 class="section-title text-primary">NEWS & ROSTER UPDATES</h1>
+            <p class="section-subtitle">Stay informed about our latest track meets, announcements, and events.</p>
         </div>
     </header>
 
-    <section class="section pt-0">
+    <section class="section" style="padding-top: 0;">
         <div class="container">
             <!-- Feed Style -->
-            <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 900px;">
+            <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 900px; margin: 0 auto;">
+
                 <div
-                    style="display: flex; gap: 2rem; background: var(--bg-gray); padding: 2rem; transform: skewX(-2deg); border-left: 4px solid var(--primary);">
-                    <div style="transform: skewX(2deg);">
-                        <h4 class="text-primary" style="font-size: 1.25rem;">SEPTEMBER 26, 2026</h4>
-                        <h2 class="title-lg" style="margin: 0.5rem 0;">EXCEPTIONAL PERFORMANCE AT SATURDAY'S
-                            INVITATIONAL</h2>
-                        <p class="text-gray">The Girls Track Team showed immense spirit at the latest meet! Coach Hood
-                            reported top times across the board in sprinting, with several personal bests broken. Thank
-                            you to the families who volunteered for concessions!</p>
+                    style="display: flex; gap: 2rem; background: var(--surface); padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-left: 6px solid var(--primary);">
+                    <div>
+                        <h4
+                            style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; color: var(--accent); margin-bottom: 0.5rem; letter-spacing: 1px;">
+                            SEPTEMBER 26, 2026</h4>
+                        <h2 style="font-size: 1.75rem; color: var(--primary-dark); margin-bottom: 1rem;">EXCEPTIONAL
+                            PERFORMANCE AT SATURDAY'S INVITATIONAL</h2>
+                        <p style="color: var(--text-main); font-size: 1.1rem;">The Girls Track Team showed immense
+                            spirit at the latest meet! Coach Hood reported top times across the board in sprinting, with
+                            several personal bests broken. Thank you to the families who volunteered for concessions!
+                        </p>
                     </div>
                 </div>
 
                 <div
-                    style="display: flex; gap: 2rem; background: var(--bg-gray); padding: 2rem; transform: skewX(-2deg); border-left: 4px solid var(--primary-bright);">
-                    <div style="transform: skewX(2deg);">
-                        <h4 class="text-primary" style="font-size: 1.25rem;">SEPTEMBER 15, 2026</h4>
-                        <h2 class="title-lg" style="margin: 0.5rem 0;">FALL CAR WASH FUNDRAISER A HUGE SUCCESS</h2>
-                        <p class="text-gray">Thanks to the community's amazing support, our annual car wash raised over
-                            $1,350! These funds will go directly to purchasing much-needed pit equipment. Our online
-                            fundraiser is also currently at $3,200.</p>
+                    style="display: flex; gap: 2rem; background: var(--surface); padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-left: 6px solid var(--primary-light);">
+                    <div>
+                        <h4
+                            style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; color: var(--accent); margin-bottom: 0.5rem; letter-spacing: 1px;">
+                            SEPTEMBER 15, 2026</h4>
+                        <h2 style="font-size: 1.75rem; color: var(--primary-dark); margin-bottom: 1rem;">FALL CAR WASH
+                            FUNDRAISER A HUGE SUCCESS</h2>
+                        <p style="color: var(--text-main); font-size: 1.1rem;">Thanks to the community's amazing
+                            support, our annual car wash raised over $1,350! These funds will go directly to purchasing
+                            much-needed pit equipment. Our online fundraiser is also currently at $3,200.</p>
                     </div>
                 </div>
+
+                <div
+                    style="display: flex; gap: 2rem; background: var(--surface); padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-left: 6px solid var(--primary-dark);">
+                    <div>
+                        <h4
+                            style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; color: var(--accent); margin-bottom: 0.5rem; letter-spacing: 1px;">
+                            AUGUST 1, 2026</h4>
+                        <h2 style="font-size: 1.75rem; color: var(--primary-dark); margin-bottom: 1rem;">BOOSTERS
+                            RECEIVE 501(C)(3) DESIGNATION</h2>
+                        <p style="color: var(--text-main); font-size: 1.1rem;">We are proud to announce that the Central
+                            Girls Track Boosters is now formally recognized as a 501(c)(3) tax-exempt organization. Your
+                            donations are now fully tax-deductible!</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <footer class="footer bg-darker">
+    <!-- Global Footer -->
+    <footer class="footer">
         <div class="container text-center">
             <p>&copy; 2026 Champaign Central High School Girls Track.</p>
             <p style="margin-top: 0.5rem;"><a href="mailto:Centralgirlstrackboosters@gmail.com"
-                    style="color:var(--text-gray);">Centralgirlstrackboosters@gmail.com</a></p>
+                    style="color:#cbd5e1;"><i class="fa-solid fa-envelope"></i> Centralgirlstrackboosters@gmail.com</a>
+            </p>
         </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

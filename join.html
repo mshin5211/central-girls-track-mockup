@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join | Central Girls Track</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="bg-dark text-light">
+<body style="background: var(--bg-color);">
 
     <nav class="navbar">
         <div class="container">
@@ -22,64 +23,69 @@
                 <a href="join.html" class="active">Join</a>
                 <a href="updates.html">News</a>
                 <a href="sponsors.html">Sponsors</a>
+                <a href="sponsors.html#donate" class="nav-donate text-dark">Donate Now</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero" style="min-height: 60vh;">
-        <div class="hero-image-wrapper" style="width:100%; clip-path:none;">
-            <img src="assets/track_action.jpg" class="hero-bg" style="opacity:0.4; filter:grayscale(50%)"
-                alt="Track Runner">
-        </div>
-        <div class="container relative z-10 text-center">
-            <div class="accent-bar mx-auto"></div>
-            <h1 class="title-massive">BECOME A CHAMPION</h1>
-            <p class="text-light" style="max-width: 600px; margin: 1rem auto; font-size: 1.25rem;">There's a place for
-                everyone on the starting line.</p>
+    <header class="section" style="padding-top: 150px; background: var(--bg-color);">
+        <div class="container text-center">
+            <h1 class="section-title text-primary">BECOME A CHAMPION</h1>
+            <p class="section-subtitle">There's a place for everyone on the starting line.</p>
         </div>
     </header>
 
-    <section class="section" style="background:var(--bg-light)">
+    <section class="section pt-0">
         <div class="container">
+            <div
+                style="width: 100%; height: 500px; margin-bottom: 4rem; overflow: hidden; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <img src="assets/track_action.jpg" alt="Track Action"
+                    style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+            </div>
+
             <div class="grid-3">
-                <div class="feature-card" style="background: var(--bg-gray); border-top: 4px solid var(--primary);">
-                    <h3 class="title-lg text-primary">NO COST</h3>
-                    <p class="text-dark mt-2" style="font-weight: 500;">Zero participation fees required to be a
-                        student-athlete on our team.</p>
+                <div class="card" style="border-top: 4px solid var(--primary-dark);">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h3 class="text-primary">NO COST</h3>
+                    <p>Zero participation fees required to be a student-athlete on our team.</p>
                 </div>
-                <div class="feature-card"
-                    style="background: var(--bg-gray); border-top: 4px solid var(--primary-bright);">
-                    <h3 class="title-lg text-primary">NO TRYOUTS</h3>
-                    <p class="text-dark mt-2" style="font-weight: 500;">All prospective athletes in grades 9-12 are
-                        accepted. We build speed together.</p>
+                <div class="card" style="border-top: 4px solid var(--primary-light);">
+                    <i class="fa-solid fa-door-open"></i>
+                    <h3 class="text-primary">NO TRYOUTS</h3>
+                    <p>All prospective athletes in grades 9-12 are accepted. We build speed together.</p>
                 </div>
-                <div class="feature-card" style="background: var(--bg-gray); border-top: 4px solid var(--accent);">
-                    <h3 class="title-lg text-primary">ACADEMICS FIRST</h3>
-                    <p class="text-dark mt-2" style="font-weight: 500;">Awards for academic achievement in the classroom
-                        and college recruiting opportunities.</p>
+                <div class="card" style="border-top: 4px solid var(--accent);">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3 class="text-primary">ACADEMICS FIRST</h3>
+                    <p>Awards for academic achievement in the classroom and college recruiting opportunities.</p>
                 </div>
             </div>
 
+            <!-- Join Instructions -->
             <div
-                style="background: var(--bg-darker); padding: 4rem; text-align: center; border-radius: 8px; margin-top: 4rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                <h2 class="title-xl text-accent mb-2">READY TO RUN?</h2>
-                <p class="text-light" style="font-size: 1.25rem; max-width: 600px; margin: 0 auto 2rem;">Email Coach
-                    Hood and the Boosters below to get the official practice schedule and sign-up form. We welcome all
-                    prospective athletes at any time.</p>
+                style="background: var(--surface); padding: 4rem; text-align: center; border-radius: var(--radius-lg); margin-top: 4rem; box-shadow: var(--shadow-sm); border: 1px solid var(--border);">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary-dark);">READY TO RUN?</h2>
+                <p style="font-size: 1.15rem; max-width: 600px; margin: 0 auto 2rem; color: var(--text-muted);">
+                    Email Coach Hood and the Boosters below to get the official practice schedule and sign-up form. We
+                    welcome all prospective athletes at any time.
+                </p>
                 <a href="mailto:Centralgirlstrackboosters@gmail.com" class="btn"
-                    style="background: var(--bg-light); color: var(--primary-dark);">
-                    <span><i class="fa-solid fa-envelope"></i> Centralgirlstrackboosters@gmail.com</span>
+                    style="padding: 1rem 2.5rem; font-size: 1.25rem;">
+                    <i class="fa-solid fa-envelope" style="margin-right: 10px;"></i> Centralgirlstrackboosters@gmail.com
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="footer text-center">
-        <p>&copy; 2026 Champaign Central High School Girls Track.</p>
-        <p style="margin-top: 0.5rem;"><a href="mailto:Centralgirlstrackboosters@gmail.com"
-                style="color:var(--text-gray);">Centralgirlstrackboosters@gmail.com</a></p>
+    <!-- Global Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Champaign Central High School Girls Track.</p>
+            <p style="margin-top: 0.5rem;"><a href="mailto:Centralgirlstrackboosters@gmail.com"
+                    style="color:#cbd5e1;"><i class="fa-solid fa-envelope"></i> Centralgirlstrackboosters@gmail.com</a>
+            </p>
+        </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
